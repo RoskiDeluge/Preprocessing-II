@@ -168,6 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.home .navigation {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .navigation .logo {
+  width: 30rem;
+  margin-top: 1rem;
+  margin-right: 7rem;
+}
+.home .navigation nav {
+  display: flex;
+  align-items: flex-end;
+}
+.home .navigation nav a {
+  margin: 20px;
+  font-family: 'Helvetica' Sans-serif;
+  text-decoration: none;
+  color: #212529;
+  font-size: 20px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +199,10 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .home .content-section {
   margin: 30px 0;
