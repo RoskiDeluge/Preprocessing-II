@@ -170,22 +170,32 @@ img {
 }
 .home .navigation {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .navigation .logo {
-  width: 30rem;
+  margin-right: 30%;
   margin-top: 1rem;
-  margin-right: 7rem;
+}
+.home .navigation .mobilelogo {
+  display: none;
 }
 @media (max-width: 500px) {
   .home .navigation .logo {
     display: none;
   }
+  .home .navigation .mobilelogo {
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    width: 100%;
+    font-size: 4rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
 }
 .home .navigation nav {
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
 .home .navigation nav a {
   margin: 20px;
@@ -220,7 +230,6 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-section {
-    flex-direction: column;
     align-items: center;
   }
 }
