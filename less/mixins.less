@@ -1,1 +1,16 @@
 // Mixins in here
+
+.buttonStyle(@color, @fcolor, @btn-font, @fsize) {
+    background-color: @color;
+    color: @fcolor;
+    font-family: @btn-font;
+    font-size: @fsize;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.flexify() {
+    display: flex;
+}

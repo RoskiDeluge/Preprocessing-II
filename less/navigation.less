@@ -1,1 +1,77 @@
 // Navigation Styles here
+.home {
+    .navigation {
+        .flexify();
+        flex-direction: column;
+        border-bottom: 2px dashed @navigation-border;
+        .logo {
+            margin-right: 30%;
+            margin-top: 1rem;
+        }
+        .mobilelogo {
+            display: none;
+        }
+
+        @media @mobile {
+            .logo {
+                display:none;
+            }
+            .mobilelogo {
+                .flexify();
+                font-family: 'Indie Flower', cursive;
+                width: 100%;
+                font-size: 4rem;
+                justify-content: center;
+                margin-top: 1rem;
+            }
+        }
+
+        nav {
+            .flexify();
+            justify-content: flex-end;
+
+            a {
+                margin: 20px;
+                font-family: @btn-font;
+                text-decoration: none;
+                color: @shark;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// .home {
+//     .navigation {
+//         .flexify();
+//         border-bottom: 2px dashed @navigation-border;
+//         .logo {
+//             width: 30rem;
+//             margin-top: 1rem;
+//             margin-right: 7rem;
+//             @media @mobile {
+//                 display: none;
+//             }
+
+//         nav {
+//             .flexify();
+//             align-items: flex-end;
+
+//             a {
+//                 margin: 20px;
+//                 font-family: @btn-font;
+//                 text-decoration: none;
+//                 color: @shark;
+//                 font-size: 20px;
+
+//             }
+//         }
+//     }
+//     }
+// }
